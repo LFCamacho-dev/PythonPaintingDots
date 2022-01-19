@@ -28,17 +28,17 @@ color_list = [(58, 106, 148), (224, 200, 110), (134, 84, 58), (223, 138, 62),
 
 
 def get_ready():
+    lucho.hideturtle()
     lucho.speed(0)
     lucho.setheading(225)
     lucho.penup()
-    lucho.forward(250)
+    lucho.forward(300)
     lucho.setheading(0)
 
 
 def line_of_dots():
     for _ in range(10):
         lucho.dot(20, random.choice(color_list))
-
         lucho.forward(50)
 
 
